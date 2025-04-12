@@ -1,13 +1,17 @@
-import logo from './logo.svg';
+import React, {Fragment} from 'react';
 import './App.css';
+import InputTodo from './components/InputTodo';
+import ListTodos from './components/ListTodos';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-         hi
-      </header>
-    </div>
+    <Fragment>
+      <div className='container'>
+      <InputTodo/>
+      <ListTodos/>
+
+      </div>
+    </Fragment>
   );
 }
 
